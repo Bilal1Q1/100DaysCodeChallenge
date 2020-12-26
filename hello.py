@@ -15,4 +15,3 @@ while '-' in display:
             display[i] = word[i]
     print(display)
 print('You win')
-
