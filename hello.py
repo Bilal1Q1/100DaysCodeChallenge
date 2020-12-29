@@ -55,7 +55,6 @@ stages = ['''
       |
 =========
 ''']
-
 words_list =['ardvark','baboon','camel']
 word = random.choice(words_list)
 word_length = len(word)
