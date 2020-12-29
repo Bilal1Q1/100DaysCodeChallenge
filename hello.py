@@ -6,7 +6,6 @@ stages = ['''
  /|\  |
  / \  |
       |
-=========
 ''', '''
   +---+
   |   |
@@ -74,3 +73,4 @@ while not game_over:
     if '-' not in display:
         game_over = True
         print('You Win ')
+#Working with Dictionary
