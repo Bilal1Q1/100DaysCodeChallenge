@@ -1,4 +1,4 @@
-from art import logo
+from Day_9_art import logo
 
 print('Welcome to "Blink Auction Program"')
 
