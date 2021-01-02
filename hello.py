@@ -1,25 +1,30 @@
-def Calculator(f_num, operator, s_num):
-    if operator == '+':
-        return f_num + s_num
-    elif operator == '*':
-        return f_num * s_num
-    elif operator == '-':
-        return f_num - s_num
-    elif operator == '/':
-        return f_num / s_num
-    else:
-        return 'Wrong Operator'
-first_num = int(input('Enter first Number: '))
+def Add(n1,n2):
+    return n1 + n2
+def Subtract(n1,n2):
+    return n1 - n2
+def Multiply(n1,n2):
+    return n1 * n2
+def Divide(n1,n2):
+    return n1/n2
+operations = {
+    '+' : Add,
+    '-': Subtract,
+    '*' : Multiply,
+    '/' : Divide
+}
+num1 = int(input('Enter first Number: '))
+
+for key in operations:
+    print(key)
 game_over = False
 while not game_over:
-
-    operator = input('\n+\n-\n*\n\\\n\nChoose operation: ')
-    second_number = int(input('Enter Second Numnber: '))
-    result = Calculator(first_num, operator, second_number)
-    print(f"{first_num} {operator} {second_number} = {result}")
-    continu = input(f'Type \'y\' to continue calculating with {result}, or type \'n\' to start a new calculatio: ').lower()
-    if continu == 'no':
-        game_over = True
+    operation_symbol = input('Choose the Operation: ')    
+    num2 = int(input('Enter second Number: '))
+    calculation_function = operations[operation_symbol]
+    answer = calculation_function(12,2)
+    print(f'{num1} {operation_symbol} {num2} = {answer}')
+    continu = input(f'Type \'y\' to continue calculating with {answer}, or type \'n\' to exit: ').lower()
+    if continu == 'y':
+        num1 = answer
     else:
-        first_num = result
-        
+        game_over = True
