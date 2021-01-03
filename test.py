@@ -1,16 +1,15 @@
-def Add(num1, num2):
-    return num1 + num2
-def Subtract(num1, num2):
-    return num1 - num2
-def Multiply(num1, num2):
-    return num1 * num2
-def Divide(num1, num2):
-    return num1 / num2
-operations = {
-    '+' : Add,
-    '-': Subtract,
-    '*' : Multiply,
-    '/' : Divide
-}
-calculatin_function = operations['+']
-print('Add'())
+
+
+
+
+
+
+
+user_cards = []
+computer_cards = []
+# for _ in range(2):
+user_cards.extend([])
+# computer_cards.append(deal_card())
+
+
+print(user_cards)
