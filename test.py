@@ -1,15 +1,9 @@
+d={
+    'name': 'Real Madrid CF',
+    'follower_count': 86,
+    'description': 'Football club',
+    'country': 'Spain'
+}
 
-
-
-
-
-
-
-user_cards = []
-computer_cards = []
-# for _ in range(2):
-user_cards.extend([])
-# computer_cards.append(deal_card())
-
-
-print(user_cards)
+for value in d.values():
+    print(value, end=' ')
